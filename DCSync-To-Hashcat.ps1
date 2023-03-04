@@ -1,11 +1,8 @@
+Function Invoke-DCSyncTH {
+
 param (
     [string]$Domain = $env:USERDNSDOMAIN
 )
-
-
-Function Invoke-DCSyncTH {
-
-
 
 $PATH = "C:\Windows\Temp\"
 $LOGFILE = $PATH + "Log.txt"
@@ -55,3 +52,5 @@ foreach ($line in $file_content) {
 Write-Host ""
 
 }
+
+Invoke-DCSyncTH 
