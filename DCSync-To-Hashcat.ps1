@@ -54,4 +54,3 @@ Write-Host ""
 
 }
 
-Invoke-DCSyncTH
