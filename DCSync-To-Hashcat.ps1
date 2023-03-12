@@ -53,5 +53,3 @@ foreach ($line in $file_content) {
 Write-Host ""
 
 }
-
-Invoke-DCSyncTH 
