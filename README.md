@@ -1,5 +1,5 @@
 # DCSync-To-hashcat
-Performs DCSync, extracts all hashes in a hashcat friendly format
+Performs DCSync and extracts all user accounts hashes in a hashcat friendly format
 
 ### Execute from GitHub:
 ```
