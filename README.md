@@ -17,5 +17,5 @@ Invoke-DCSyncTH -OutputToFile -Y         # Output hashes to file. Defaults to $H
 ### hashcat cracking
 The results can be copied over to file and run againt Hashcat
 ```
-hashcat -a 0 -m 1000 hashes.txt Wordlists/rockyou2021.txt
+hashcat -a 0 -m 1000 hashes.txt -O Wordlists/rockyou2021.txt -r Rules/best64.rule
 ```
