@@ -8,7 +8,7 @@ param (
     [string]$ComputerHashes = "N"
 )
 
-$PATH = "$HOME"
+$PATH = "$HOME\"
 $LOGFILE = $PATH + "Log.txt"
 $HASHES = $PATH  + "Hashes.txt"
 $USERS = $PATH + "Users.txt"
