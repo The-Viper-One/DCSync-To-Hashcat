@@ -12,7 +12,7 @@ $PATH = "$HOME"
 $LOGFILE = $PATH + "Log.txt"
 $HASHES = $PATH  + "Hashes.txt"
 $USERS = $PATH + "Users.txt"
-$HASHCATFILE = $PATH +"Hashcat.txt"
+$HASHCATFILE = $PATH + "Hashcat.txt"
 
 Write-Host ""
 Write-Host ""
